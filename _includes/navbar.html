@@ -17,6 +17,10 @@
       <a href="{{ site.dc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ site.github.url | replace_first: 'http:', 'https:' }}/assets/img/dc-icon-black.svg" alt="Data Carpentry logo" />
       </a>
+      {% elsif page.carpentry == "lc" %}
+      <a href="{{ site.swc_site }}" class="pull-left">
+        <img class="navbar-logo" src="{{ site.github.url | replace_first: 'http:', 'https:' }}/assets/img/lc-icon-black.svg" alt="Software Carpentry logo" />
+      </a>
       {% elsif site.carpentry == "swc" %}
       <a href="{{ site.swc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ site.github.url | replace_first: 'http:', 'https:' }}/assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />

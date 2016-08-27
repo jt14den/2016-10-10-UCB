@@ -1,20 +1,20 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "sc"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for host, lead instructor, or whoever else is handling questions
-etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+carpentry: "lc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "UC Berkeley Library - Library Carpentry"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "190 Doe Library"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "37.872318,-122.259487"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+humandate: "Oct 10-11, 2016"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2016-10-10      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2016-10-11        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Tim Dennis", "Harrison Dekker"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["tbd"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "speterso@library.berkeley.edu"      # contact email address for host, lead instructor, or whoever else is handling questions
+etherpad: "http://pad.software-carpentry.org/berkeley-libcarp"          # optional: URL for the workshop Etherpad if there is one
+eventbrite: "27361822949"         # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -27,6 +27,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
+<p><strong>Introducing Library Carpentry, a Software Carpentry based workshop series aimed at librarians, archivists, museum professionals, and other information professionals. This workshop is brought to you by UC Berkeley Library and volunteers of Software Carpentry.</strong></p>
 
 <!--
   EVENTBRITE
@@ -36,6 +37,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
+<h2 id="register">Register</h2>
+
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -45,11 +48,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   scrolling="auto">
 </iframe>
 {% endif %}
-
-<h4>This is the workshop template.  Use it to create your own website.
-Delete this line and email the link to your workshop page to admin@software-carpentry.org.
-If this is a self organized workshop, please be sure to include any other details
-Software Carpentry staff may need to know in your email.</h4>
 
 
 <h2 id="general">General Information</h2>
@@ -86,7 +84,7 @@ Software Carpentry staff may need to know in your email.</h4>
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at librarians, archivists, museum professionals, and other information professionals.
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
@@ -179,28 +177,32 @@ Software Carpentry staff may need to know in your email.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>October 10</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>09:00</td>  <td>Welcome & Introduction</td> </tr>
+      <tr> <td>09:15</td>  <td>Jargon Busting</td> </tr>
+      <tr> <td>10:15</td>  <td>Break</td> </tr>
+      <tr> <td>10:30</td> <td>Regular Expressions (Regex)</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Bash Shell or Git</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
-    <h3>Day 2</h3>
+    <h3>October 11</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>09:00</td>  <td>Introduction to Open Refine</td> </tr>
+      <tr> <td>10:15</td>  <td>Break</td> </tr>
+      <tr> <td>10:30</td>  <td>Python and APIs</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Data Mangement with SQL</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
 </div>
+
 
 <!--
   ETHERPAD
@@ -247,19 +249,19 @@ Software Carpentry staff may need to know in your email.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <h3 id="syllabus-regex">Regular Expressions</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
+      <li>Introduction</li>
+      <li>Basic operators</li>
+      <li>Anchors</li>
+      <li>Quantifiers</li>
+      <li>Practice using https://regex101.com/</li>
+     <!-- <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>-->
     </ul>
   </div>
+
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3 id="syllabus-python">Introduction to Python</h3>
     <ul>
       <li>Using libraries</li>
       <li>Working with arrays</li>
@@ -268,64 +270,43 @@ Software Carpentry staff may need to know in your email.</h4>
       <li>Loops and conditionals</li>
       <li>Defensive programming</li>
       <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
+
   <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
+    <h3 id="syllabus-openrefine">Introduction to OpenRefine</h3>
     <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
+      <li>Data format conversion</li>
+      <li>Transformations</li>
+      <li>Cluster edit data</li>
+      <li>Reconciliation</li>
+      <li>Templating data</li>
+      <!-- Insert link when ready <li><a href="{{site.swc_githubio}}/insert">Reference...</a></li>-->
     </ul>
   </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_pages}}/matlab-novice-inflammation/reference/">Reference...</a></li>
-     </ul>
-   </div>
-   -->
 </div>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+    <h3 id="syllabus-xpathxquery">XPath / XQuery</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
+      <li>Traversing a document</li>
+      <li>Building queries</li>
+      <li>Searching through an XML document</li>
+      <li>Find and replace text</li>
+      <li>Batch editing XML documents</li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
+    <h3 id="syllabus-webscraping">Introduction to Web scraping</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
+      <li>What is web scraping and why it is useful</li>
+    <li>Scraping manually using browser extensions</li>
+    <li>Defining what items to extract using XPath</li>
+    <li>Writing scrapers to crawl a website</li>
+    <li>Store and reuse extracted items</li>
+    <li>Do's and Don'ts of web scraping</li>
     </ul>
   </div>
 </div>
